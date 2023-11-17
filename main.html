@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
+    <title>Feedback Form</title>
 </head>
 
 <body>
-	<h1>Feedback Form</h1>
-	<form action="" method="post">
-		<label for="name">Name</label>
-		<input name="name" type="text" id="name" required>
-		<label for="portfolio">Portfolio</label>
-		<input name="portfolio" type="URL" id="portfolio" required>
-		<label for="favColor">Favorite Color</label>
-		<input name="favorite color" type="color" id="favColor" required>
-		<label for="likeness">Likeness</label>
-		<input name="likeness" type="range" id="likeness" min="1" max="100" required>
-	</form>
+    <h1>Feedback Form</h1>
+    <form action="" method="post">
+        <label for="name">Name *</label>
+        <input name="name" type="text" id="name" minlength="3" maxlength="50" required>
+
+        <label for="portfolio">Portfolio *</label>
+        <input name="portfolio" type="url" id="portfolio" required>
+
+        <label for="favColor">Favorite Color *</label>
+        <input name="favorite_color" type="color" id="favColor" required>
+
+        <label for="likeness">Likeness *</label>
+        <input name="likeness" type="range" id="likeness" min="1" max="100" required>
+
+        <button type="submit">Submit</button>
+    </form>
 </body>
 
 </html>
